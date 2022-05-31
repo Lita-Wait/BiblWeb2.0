@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css\font-awesome.min.css">
+    <link rel="stylesheet" href="plugins\owl.carousel\css\owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins\rs-plugin\css\settings.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="plugins\js-flickr-gallery\css\js-flickr-gallery.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="plugins\lightbox\css\lightbox.css" media="screen">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600italic,700italic,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="css\style.css">
+
+    <title>Библиотека</title>
+
+
+</head>
+<body>
+    <div id="pageloader" class="row m0">
+        <div class="loader-item"><img src="images\loader.gif" alt="загрузка"></div>
+    </div> 
+    <section id="nr_topStrip" class="row">
+        <div class="container">
+            <div class="row">
+                <!--TopTop Strip-->
+                <ul class="list-inline c-info fleft">
+                    <li><a href="tel:123456789012"><i class="fa fa-phone"></i> +7 123 456 78 90</a></li>
+                    <li><a href="mailto:mail@mail.com"><i class="fa fa-envelope-o"></i> mail@mail.com</a></li>
+                </ul>
+                <ul class="list-inline lang fright">
+                    <li class="active"><a href="#"><img src="images\flags\flag1.png" alt=""></a></li>
+                    <li><a href="#"><img src="images\flags\flag2.png" alt=""></a></li>
+                    <li><a href="#"><img src="images\flags\flag3.png" alt=""></a></li>
+                    <li><a href="#"><img src="images\flags\flag4.png" alt=""></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </section> <!--Top Strip-->
+
+    <header class="row">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-sm-6">
+                    <div class="row">
+                        <a href="index.html"><img src="images\logo.png"></a>
+                    </div>
+                </div>
+                <div class="social_nav col-sm-6">
+                    <div class="row">
+                        <ul class="list-inline fright">
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> <!--Header-->
+
+
+
+    <div class="container">
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+    </div>
+
+<footer id="nr_footer" class="row">
+        <div class="container">
+            <div class="row goTop">
+                <a href="#top"><i class="fa fa-angle-up"></i></a>
+            </div>
+            <div class="row twitterSlide">                
+                <div class="owl-carousel twitterSlider">
+                    <div class="item">
+                        <i class="fa fa-twitter"></i><br>
+                        Поисковая реклама без оглядки на авторитеты отражает системный анализ. 
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-twitter"></i><br>
+                        Представляется логичным, что рекламный бриф концентрирует стиль менеджмента. 
+                    </div>
+                </div>
+            </div>
+            <div class="footerWidget row">
+                <div class="col-sm-6 widget">
+                    <div class="getInTouch_widget row">
+                        <div class="widgetHeader row m0"><img src="images\whiteSquare.png" alt="">Информация для связи</div>        
+                        <div class="row getInTouch_tab m0">
+                            <ul class="nav nav-tabs nav-justified" role="tablist" id="getInTouch_tab">
+                              <li role="presentation" class="active"><a href="#contactPhone" aria-controls="contactPhone" role="tab" data-toggle="tab"><i class="fa fa-phone"></i></a></li>
+                              <li role="presentation"><a href="#contactEmail" aria-controls="contactEmail" role="tab" data-toggle="tab"><i class="fa fa-envelope"></i></a></li>
+                              <li role="presentation"><a href="#contactHome" aria-controls="contactHome" role="tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                              <div role="tabpanel" class="tab-pane active" id="contactPhone"><i class="fa fa-phone"></i> Звонки по России: 111-111-111</div>
+                              <div role="tabpanel" class="tab-pane" id="contactEmail"><i class="fa fa-envelope"></i>email: mail@mail.com</div>
+                              <div role="tabpanel" class="tab-pane" id="contactHome"><i class="fa fa-home"></i>Россия, Москва, ул. Пушкина 23а.</div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-sm-6 widget">
+                    <div class="row">
+                        <div class="widgetHeader row m0"><img src="images\whiteSquare.png" alt="">Наша галерея</div>        
+                        <ul class="footer-gallery">
+                            <li><img src="images/gallery/1.jpg"></li>
+                            <li><img src="images/gallery/2.jpg"></li>
+                            <li><img src="images/gallery/3.jpg"></li>
+                        </ul>                       
+                    </div>    
+                </div>
+            </div>
+            <div class="row copyrightRow">
+                &copy; 2022 BiblWeb - Сайт для библиотеки
+            </div>
+        </div>
+    </footer>
+
+     <!--jQuery, Bootstrap and other vendor JS-->
+    <script src="js\jquery-2.1.3.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    
+    <script src="plugins\rs-plugin\js\jquery.themepunch.tools.min.js"></script>
+    <script src="plugins\rs-plugin\js\jquery.themepunch.revolution.min.js"></script>
+    <script src="plugins\owl.carousel\js\owl.carousel.min.js"></script>
+    
+    
+    <script src="plugins\js-flickr-gallery\js\js-flickr-gallery.min.js"></script>
+    <script src="plugins\lightbox\js\lightbox.min.js"></script>
+    <!--Isotope-->
+    <script src="plugins\isotope\isotope-custom.js"></script>
+    
+    
+    <script src="js\main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
