@@ -8,6 +8,7 @@ $(document).ready(function(){
         return this.optional(element) || /^\bcat\b$/.test(value);
     }, "type the correct answer -_-");
 
+
     // validate contactForm form
     $(function() {
         $('#contactForm').validate({

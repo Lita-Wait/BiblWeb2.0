@@ -3,15 +3,15 @@ $(document).ready(function(){
     (function($) {
         "use strict";
     /*PreLoader*/
-        $(".loader-item").delay(700).fadeOut();
-        $("#pageloader").delay(800).fadeOut("slow");
+        $(".loader-item").delay(1200).fadeOut();
+        $("#pageloader").delay(1300).fadeOut("slow");
     
     /*Go Top*/
         $('a[href="#top"]').click(function () {
             $('html, body').animate({ scrollTop: 0 }, 800);
             return false
         });
-    
+        
     
     /*TweetSlider Slider*/
         $('.twitterSlide .twitterSlider').owlCarousel({

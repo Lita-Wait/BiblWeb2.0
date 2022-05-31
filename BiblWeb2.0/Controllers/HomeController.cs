@@ -17,8 +17,24 @@ namespace BiblWeb2._0.Controllers
         {
             return View();
         }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
 
-        public IActionResult Privacy()
+        public IActionResult Project()
+        {
+            return View();
+        }
+        public IActionResult Service()
+        {
+            return View();
+        }
+        public IActionResult New()
+        {
+            return View();
+        }
+        public IActionResult Contact()
         {
             return View();
         }
