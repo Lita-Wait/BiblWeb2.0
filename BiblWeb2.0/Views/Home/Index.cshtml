@@ -1,4 +1,9 @@
-﻿    <nav class="navbar navbar-default navbar-static-top">
+﻿@using BiblWeb2._0.Data;
+@using System.Linq;
+@inject WebDbContext context;
+
+
+<nav class="navbar navbar-default navbar-static-top">
         <div class="container-fluid container">
             <div class="row m04m">
 
@@ -40,9 +45,29 @@
         <div class="mainSliderContainer">
             <div class="mainSlider">
                 <ul>
+         @*       @foreach (var item in context.SliderSliders.Where(x =>x.Sliders.SlidersId == 1))
+                {
+                    <!-- SLIDE  -->
+                    
+                    <li data-transition="boxslide" data-slotamount="7">
+                       <img src="~/images/sliders/@context.Sliders.Where(x=>x.SliderId == item.SliderId).FirstOrDefault().Image" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <div class="caption sfr str" data-x="-100" data-y="135" data-speed="700" data-start="1700" data-easing="easeOutBack">
+                            <h3>@item.Slider.Header</h3>
+                       </div>
+                       <div class="caption sfl stl" data-x="-100" data-y="190" data-speed="500" data-start="1900" data-easing="easeOutBack">
+                            <h4>@item.Slider.LowHeader</h4>
+                       </div>
+                       <div class="caption skewfromleft skewtoleft" data-x="-100" data-y="265" data-hoffset="-176" data-speed="500" data-start="1900" data-easing="easeOutBack">
+                           <p>@item.Slider.Text</p>
+                       </div>
+                       <div class="caption skewfromright skewtoright" data-x="right" data-y="130" data-hoffset="176" data-speed="500" data-start="1900" data-easing="easeOutBack"><div class="tools"><img src="~/images/sliders/@item.Slider.AdImage" alt="brifcase"></div>
+                       </div>                      
+                    </li>  
+
+                }*@
                     <!-- SLIDE  -->
                     <li data-transition="boxslide" data-slotamount="7">
-                       <img src="~/images/slider/slide1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <img src="~/images/sliders/slide1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                        <div class="caption sfr str" data-x="center" data-y="140" data-speed="700" data-start="1700" data-easing="easeOutBack">
                             <h2>Центральная библиотека</h2>
                        </div>
@@ -50,12 +75,12 @@
                             <div class="cont-row">Новоуральского городского округа</div>
                        </div>
                        <div class="caption sfb stb" data-x="400" data-y="375" data-hoffset="0" data-speed="500" data-start="1900" data-easing="easeOutBack">
-                           <a asp-action="AboutsUs" asp-controller="Home" type="button" class="btn btn-default">Подробнее</a>
+                           <a asp-action="AboutUs" asp-controller="Home" type="button" class="btn btn-default">Подробнее</a>
                        </div>                      
                     </li>  
                     <!-- SLIDE 2 -->
                     <li data-transition="boxslide" data-slotamount="7">
-                       <img src="~/images/slider/slide2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <img src="~/images/sliders/slide2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                        <div class="caption sfr str" data-x="-100" data-y="135" data-speed="700" data-start="1700" data-easing="easeOutBack">
                             <h3>Сайт для библиотеки</h3>
                        </div>
@@ -65,12 +90,12 @@
                        <div class="caption skewfromleft skewtoleft" data-x="-100" data-y="265" data-hoffset="-176" data-speed="500" data-start="1900" data-easing="easeOutBack">
                            <p> lorem </p>
                        </div>
-                       <div class="caption skewfromright skewtoright" data-x="right" data-y="130" data-hoffset="176" data-speed="500" data-start="1900" data-easing="easeOutBack"><div class="tools"><img src="~/images/slider/man.png" alt="brifcase"></div>
+                       <div class="caption skewfromright skewtoright" data-x="right" data-y="130" data-hoffset="176" data-speed="500" data-start="1900" data-easing="easeOutBack"><div class="tools"><img src="~/images/sliders/man.png" alt="brifcase"></div>
                        </div>                      
                     </li>  
                     <!-- SLIDE 3 -->
                     <li data-transition="boxslide" data-slotamount="7">
-                       <img src="~/images/slider/slide3.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <img src="~/images/sliders/slide3.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                        <div class="caption sfr str" data-x="-100" data-y="135" data-speed="700" data-start="1700" data-easing="easeOutBack">
                             <h3>Сайт для библиотекии</h3>
                        </div>
@@ -81,7 +106,7 @@
                            <p> lorem </p>
                        </div>
 
-                       <div class="caption skewfromright skewtoright" data-x="right" data-y="130" data-hoffset="176" data-speed="500" data-start="1900" data-easing="easeOutBack"><div class="sketch"><img src="~/images/slider/man.png" alt="brifcase"></div>
+                       <div class="caption skewfromright skewtoright" data-x="right" data-y="130" data-hoffset="176" data-speed="500" data-start="1900" data-easing="easeOutBack"><div class="sketch"><img src="~/images/sliders/man.png" alt="brifcase"></div>
                        </div>                       
                     </li>                          
                 </ul>
@@ -154,7 +179,6 @@
             </ul>
         </div>
         <div class="row projects m0" id="container">
-
             <div class="project Events">
                 <a href="~/images/projects/project1.jpg" data-lightbox="project" data-title="Название проекта (завершено)">
                     <img src="~/images/projects/project1.jpg" alt="Project 1" class="projectImg">
@@ -171,6 +195,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="project Contests">
                 <a href="~/images/projects/project2.jpg" data-lightbox="project" data-title="Название проекта (в разработке)">
                     <img src="~/images/projects/project2.jpg" alt="Project 1" class="projectImg">
@@ -246,22 +271,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="project Other">
-                <a href="~/images/projects/project7.jpg" data-lightbox="project" data-title="Название проекта (подготовка)">
-                    <img src="~/images/projects/project7.jpg" alt="Project 1" class="projectImg">
-                </a>
-                <div class="projectDetails row m0">
-                    <div class="fleft nameType">
-                        <div class="row m0 projectName">Название проекта</div>
-                        <div class="row m0 projectType">подготовка</div>
-                    </div>
-                    <div class="fright projectIcons btn-group" role="group">
-                        <a href="~/images/projects/project7.jpg" data-lightbox="project" data-title="Название проекта (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
-                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
-                    </div>
-                </div>
-            </div>
         </div>        
     </section> <!--Projects-->
     
@@ -279,7 +288,7 @@
                         </div>
                         <div class="row m0 featureImg">
                             <a href="single-post.html">
-                                <img src="~/images/blog/blog1.jpg" alt="Подготавливается новый проект" class="img-responsive">
+                                <img src="~/images/news/new1.jpg" alt="Подготавливается новый проект" class="img-responsive">
                             </a>
                         </div>
                         <div class="row m0 postExcerpts">
@@ -298,7 +307,7 @@
                         </div>
                         <div class="row m0 featureImg">
                             <a href="single-post.html">
-                                <img src="~/images/blog/blog2.jpg" alt="Подготавливается новый проект" class="img-responsive">
+                                <img src="~/images/news/new2.jpg" alt="Подготавливается новый проект" class="img-responsive">
                             </a>
                         </div>
                         <div class="row m0 postExcerpts">
@@ -317,7 +326,7 @@
                         </div>
                         <div class="row m0 featureImg">
                             <a href="single-post.html">
-                                <img src="~/images/blog/blog3.jpg" alt="Подготавливается новый проект" class="img-responsive">
+                                <img src="~/images/news/new3.jpg" alt="Подготавливается новый проект" class="img-responsive">
                             </a>
                         </div>
                         <div class="row m0 postExcerpts">
@@ -343,9 +352,9 @@
                 <div class="owl-carousel testimonialSlider row m0">
                     <div class="item">
                         <div class="clientPhoto row m0">
-                            <img src="~/images/testimonial/photo.png" alt="">
+                            <img src="~/images/sliders/photo.png" alt="">
                         </div>
-                        <div class="clientNameTitle row m0">Иван Дионтьев</div>
+                        <div class="clientNameTitle row m0">Иван Иванов</div>
                         <div class="arrow row m0">
                             <img src="~/images/testimonial/arrow.png">
                         </div>
@@ -353,9 +362,9 @@
                     </div>
                     <div class="item">
                         <div class="clientPhoto row m0">
-                            <img src="~/images/testimonial/photo.png" alt="">
+                            <img src="~/images/sliders/photo.png" alt="">
                         </div>
-                        <div class="clientNameTitle row m0">Иван Дионтьев</div>
+                        <div class="clientNameTitle row m0">Иван Иванов</div>
                         <div class="arrow row m0">
                             <img src="~/images/testimonial/arrow.png">
                         </div>
