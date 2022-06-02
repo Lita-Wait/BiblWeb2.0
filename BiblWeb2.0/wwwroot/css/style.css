@@ -2762,7 +2762,7 @@ div#carousel ~ span {
   font-size: 22px;
   font-weight: bold;
   position: relative;
-  background: #F33535;
+  background: #2362ae;
 }
 #aboutus .member.member3_1 .memberIntro .name:after {
   content: '';
@@ -2770,7 +2770,7 @@ div#carousel ~ span {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #F33535;
+  border-top: 10px solid #2362ae;
   position: absolute;
   left: -webkit-calc(50% - 10.5px);
   left: calc(50% - 10.5px);
