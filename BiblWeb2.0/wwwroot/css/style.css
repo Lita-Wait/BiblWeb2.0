@@ -286,7 +286,7 @@ a:hover {
 /*Header*/
 header {
   height: 105px;
-  padding: 31px 0;
+  padding: 20px 0;
   background: #333d40;
 }
 header .logo {
@@ -549,7 +549,7 @@ header .social_nav ul li:last-child {
 }
 #nr_slider .mainSliderContainer .tparrows:after {
   position: absolute;
-  color: #F33535;
+  color: #2362ae;
   top: -5px;
 }
 #nr_slider .mainSliderContainer .tparrows.tp-leftarrow:after {
@@ -755,10 +755,10 @@ header .social_nav ul li:last-child {
   }
 }
 #nr_slider .mainSliderContainer .mainSlider .caption .cont-row {
-  width: 395px;
-  padding: 15px 0;
+  
+  padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  font-size: 20px;
+  font-size: 24px;
 }
 #nr_slider .mainSliderContainer .mainSlider .caption .cont-row span {
   padding: 0 13px;
@@ -1160,7 +1160,8 @@ header .social_nav ul li:last-child {
   margin-right: 2px;
   padding: 0;
   width: 15px;
-  line-height: 15px;
+  padding: 2px 1px 0 0;
+  height: 15px;
   background: #2362ae;
   font-weight: normal;
   text-align: center;
@@ -1396,7 +1397,7 @@ div#carousel ~ span {
 #projectsRow .project .projectDetails .nameType .projectType {
   color: rgba(255, 255, 255, 0.4);
 }
-#projectsRow .project .projectDetails .projectIcons a {
+ #projectsRow .project .projectDetails .projectIcons a {
   width: 50px;
   line-height: 50px;
   border-color: #2362ae;
@@ -1408,7 +1409,7 @@ div#carousel ~ span {
   text-shadow: none;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-}
+ }
 #projectsRow .project .projectDetails .projectIcons a:first-child {
   margin-right: 2px;
 }
@@ -1931,7 +1932,7 @@ div#carousel ~ span {
   border-radius: 100%;
   padding: 20px;
   margin: 0 auto;
-  border: 1px solid #FFF;
+  border: 1px solid #9c9c9c;
 }
 #testimonials .testimonialSlider .item .clientPhoto img {
   width: 100%;
@@ -1941,6 +1942,7 @@ div#carousel ~ span {
 }
 #testimonials .testimonialSlider .item .clientNameTitle {
   margin: 20px 0;
+  font-size: 24px
 }
 #testimonials .testimonialSlider .item .arrow {
   margin-bottom: 30px;
@@ -2198,12 +2200,13 @@ div#carousel ~ span {
 }
 #nr_footer .container .goTop a {
   display: inline-block;
-  width: 62px;
+  width: 60px;
+  height: 50px;
   line-height: 62px;
   border-radius: 100%;
   background: #2362ae;
   color: #FFF;
-  font-size: 30px;
+  font-size: 40px;
 }
 #nr_footer .container:after {
   content: '';
@@ -2234,7 +2237,7 @@ div#carousel ~ span {
   text-align: center;
   color: #FFF;
   padding: 110px 0 80px;
-  margin-top: -70px;
+  margin-top: 0px;
   font-family: 'Lora', sans-serif;
   overflow: hidden;
 }
@@ -2321,6 +2324,7 @@ div#carousel ~ span {
   border-radius: 100%;
   border: 1px solid rgba(255, 255, 255, 0.8);
   font-size: 24px;
+  margin-top: 20px;
 }
 .footerWidget .getInTouch_widget ul.nav-tabs li.active a {
   background: #0B3A71;
@@ -2425,6 +2429,12 @@ div#carousel ~ span {
     margin-bottom: 0;
   }
 }
+/*----------------------------------------------------------------*/
+/*Logo*/
+.logo {
+   margin-left: 1px;
+}
+
 /*----------------------------------------------------------------*/
 /*Page Cover*/
 #pageCover {
@@ -2799,7 +2809,7 @@ div#carousel ~ span {
   }
 }
 /*----------------------------------------------------------------*/
-/*Partner Slider*/
+/*Docs Slider*/
 .partnersSlide {
   margin: 10px -15px 50px;
 }
